@@ -1,0 +1,81 @@
+.filtered-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стили для светлой темы */
+.filtered-list-container.light {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* Стили для темной темы */
+.filtered-list-container.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-add {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #0ea5e9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-toggle {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.user-item {
+  display: flex;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Стили элементов списка для разных тем */
+.filtered-list-container.light .user-item {
+  background-color: #fff;
+}
+
+.filtered-list-container.dark .user-item {
+  background-color: #444;
+  border-color: #555;
+}
