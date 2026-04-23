@@ -1,5 +1,39 @@
-div {
+.main-layout {
   display: flex;
-  gap: 50px;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px;
   padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #1a1a1a; 
+  min-height: 100vh;
+}
+
+.layout-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%; 
+  min-width: 380px; 
+  background-color: #222;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.inner-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+@media (max-width: 850px) {
+  .layout-section {
+    flex: 1 1 100%;
+  }
+  .main-layout {
+    padding: 15px;
+  }
 }
