@@ -2,6 +2,7 @@ import React from "react";
 import Counter from "./components/Counter/Counter";
 import FilteredList from "./components/FilteredList/FilteredList";
 import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
+import PostsApp from "./components/PostsApp/PostsApp";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <FilteredList />
 
       <RegistrationForm />
+      <PostsApp />
     </div>
   );
 }

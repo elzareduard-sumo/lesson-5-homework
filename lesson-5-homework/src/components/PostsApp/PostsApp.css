@@ -1,0 +1,140 @@
+/* PostsApp.css */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Форма */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.post-input, .post-textarea, .search-input {
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.post-textarea {
+  resize: vertical;
+}
+
+.post-input:focus, .post-textarea:focus, .search-input:focus {
+  border-color: #0ea5e9;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.submit-post-btn {
+  padding: 12px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-post-btn:hover:not(:disabled) {
+  background-color: #0284c7;
+}
+
+.submit-post-btn:disabled {
+  background-color: #555;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #444;
+  margin: 30px 0;
+}
+
+/* Список постов */
+.posts-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.loader {
+  text-align: center;
+  color: #0ea5e9;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.posts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.post-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 18px;
+  color: #0ea5e9;
+}
+
+.post-body {
+  margin: 0;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+}
